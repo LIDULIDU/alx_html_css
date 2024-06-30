@@ -12,7 +12,7 @@ main {
     overflow-y: auto;
 }
 header, footer {
-    background: #f1f1f1;
+    background: #909d3a;
     padding: 20px;
     text-align: center;
 }
@@ -24,12 +24,24 @@ article {
     flex: 2;
     padding: 20px;
     overflow-y: auto;
+    background: #969894;
+
 }
 aside {
     flex: 1;
     padding: 20px;
-    background: #f9f9f9;
+    background: #22958b;
     overflow-y: auto;
+}
+header div {
+    position: absolute;
+    left: 20px; /* Adjust as needed to align with padding */
+    display: flex;
+    align-items: center; /* Align logo vertically */
+}
+header h1 {
+    margin: 0 auto;
+   
 }
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
