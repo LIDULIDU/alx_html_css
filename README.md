@@ -1,0 +1,2 @@
+this website is all about a smiling school that helps people smile better and give awareness about the different kinds of smiles.
+the website is resonsive and user friendly hence forth its easy for anyone to navigate through.

@@ -1,0 +1,459 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.banner-background {
+    background-image: url('/Assets/Object.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+.rounded-button {
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #C271FF;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.rounded-button:hover {
+    background-color: #4c4f53;
+    transform: scale(1.05);
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-title {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main-title h1 {
+    font-size: 4em;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.main-title p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.main-title button {
+    background-color: #C271FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.pros,
+.tutorials,
+.free-membership,
+.footer {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.free-membership {
+    background-color: #071629;
+}
+
+.purple {
+    color: #C271FF;
+}
+
+.pros-container,
+.tutorials-container,
+.membership-benefits,
+.footer-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.faq-c {
+    display: flex;
+}
+
+.faq-item {
+    display: block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ps {
+    font-weight: bold;
+}
+
+.faq h2 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.pro {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.pro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.testimonial {
+    padding: 50px 20px;
+    background-color: #C271FF;
+}
+
+.testimonial-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial p,
+.testimonial blockquote {
+    margin-bottom: 20px;
+}
+
+.testimonial-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.testimonial-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+blockquote {
+    flex: 1;
+}
+
+.tutorial {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.tutorial img {
+    width: 100%;
+    height: auto;
+}
+
+.benefit {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-logo,
+.footer-images,
+.footer p {
+    margin-bottom: 20px;
+}
+
+.footer-images img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer p {
+    font-size: 1em;
+    color: antiquewhite;
+}
+
+.footer {
+    background-color: #071629;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    margin-right: 10px;
+}
+
+.footer-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.last {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+    margin-right: 20%;
+    position: absolute;
+}
+
+.last-div {
+    display: flex;
+}
+
+.tutorials-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tutorial {
+    position: relative;
+    width: 200px;
+}
+
+.tutorial img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95%, -95%);
+    width: 50px;
+    height: auto;
+    margin-top: 1px;
+}
+
+.video-icon img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.tutorial p {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.comment p {
+    margin: 0px;
+}
+
+.comment img {
+    width: 30px;
+    height: 30px;
+}
+
+.rate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.rate p {
+    margin: 0px;
+}
+
+.rate img {
+    width: 90px;
+    height: auto;
+}
+
+.align {
+    justify-self: flex-start;
+}
+
+
+@media (max-width: 1200px) {
+    .header {
+        width: 90%;
+        left: 5%;
+    }
+
+    .footer-images {
+        margin-left: 0;
+    }
+
+    .last {
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-images {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 70%;
+    }
+
+    .last {
+        align-items: center;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title h1 {
+        font-size: 2.5em;
+    }
+
+    .main-title p {
+        font-size: 1em;
+    }
+
+    .pro img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial p,
+    .testimonial blockquote {
+        font-size: 1em;
+    }
+
+    .tutorial {
+        width: 100%;
+    }
+
+    .footer-logo img,
+    .footer-images img {
+        width: 80px;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 10px;
+    }
+
+    .rounded-button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .main-title h1 {
+        font-size: 2em;
+    }
+
+    .main-title p {
+        font-size: 0.8em;
+    }
+
+    .testimonial-container {
+        padding: 20px;
+    }
+
+    .testimonial-info img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .last {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title h1 {
+        font-size: 1.5em;
+    }
+
+    .main-title p {
+        font-size: 0.8em;
+    }
+
+    .footer p {
+        font-size: 0.8em;
+    }
+}
