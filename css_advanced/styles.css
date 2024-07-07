@@ -29,6 +29,7 @@ body {
     color: #fff;
     padding: 50px 0;
     text-align: center;
+    min-height: 300px;
 }
 
 .logo {
@@ -64,6 +65,7 @@ body {
 .main-title {
     text-align: center;
     padding: 50px 20px;
+    min-height: 200px;
 }
 
 .main-title h1 {
@@ -92,11 +94,13 @@ body {
 .footer {
     padding: 50px 20px;
     text-align: center;
+    min-height: 150px;
 }
 
 .faq {
     padding: 50px 20px;
     text-align: center;
+    min-height: 200px;
 }
 
 .free-membership {
@@ -226,12 +230,22 @@ blockquote {
 }
 
 .footer {
-    background-color: #071629;
+    background-color: #0B1226;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-logo {
@@ -240,24 +254,42 @@ blockquote {
 }
 
 .footer-logo img {
+    width: 300px;
+    height: auto;
     margin-right: 10px;
 }
 
-.footer-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.footer-social a {
+    margin: 0 10px;
 }
 
-.last {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-social img:hover {
+    opacity: 0.9;
+}
+
+.footer-content,
+.footer-social {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-content > .footer-logo {
+    text-align: left;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.footer-copyright {
     margin-top: 10px;
-    margin-right: 20%;
-    position: absolute;
+    font-size: 0.9rem;
+    color: #5a5a5a;
 }
 
 .last-div {
@@ -338,122 +370,62 @@ blockquote {
     justify-self: flex-start;
 }
 
-
-@media (max-width: 1200px) {
-    .header {
-        width: 90%;
-        left: 5%;
-    }
-
-    .footer-images {
-        margin-left: 0;
-    }
-
-    .last {
-        margin-right: 10%;
-    }
-}
-
-@media (max-width: 992px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer-logo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-images {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 70%;
-    }
-
-    .last {
-        align-items: center;
-        margin-right: 10px;
-    }
-}
-
-@media (max-width: 768px) {
+@media (min-height: 500px) {
     .main-title h1 {
-        font-size: 2.5em;
+        font-size: 3.5em;
     }
 
     .main-title p {
-        font-size: 1em;
-    }
-
-    .pro img {
-        width: 80px;
-        height: 80px;
+        font-size: 1.2em;
     }
 
     .testimonial p,
     .testimonial blockquote {
-        font-size: 1em;
-    }
-
-    .tutorial {
-        width: 100%;
-    }
-
-    .footer-logo img,
-    .footer-images img {
-        width: 80px;
-        height: auto;
+        font-size: 1.2em;
     }
 }
 
-@media (max-width: 576px) {
-    .header {
-        padding: 10px;
-    }
-
-    .rounded-button {
-        padding: 5px 10px;
-        font-size: 14px;
-    }
-
+@media (min-height: 600px) {
     .main-title h1 {
-        font-size: 2em;
+        font-size: 4em;
     }
 
     .main-title p {
-        font-size: 0.8em;
-    }
-
-    .testimonial-container {
-        padding: 20px;
-    }
-
-    .testimonial-info img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .last {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .main-title h1 {
         font-size: 1.5em;
     }
 
-    .main-title p {
-        font-size: 0.8em;
+    .testimonial p,
+    .testimonial blockquote {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-height: 700px) {
+    .main-title h1 {
+        font-size: 4.5em;
     }
 
-    .footer p {
-        font-size: 0.8em;
+    .main-title p {
+        font-size: 1.8em;
+    }
+
+    .testimonial p,
+    .testimonial blockquote {
+        font-size: 1.8em;
+    }
+}
+
+@media (min-height: 800px) {
+    .main-title h1 {
+        font-size: 5em;
+    }
+
+    .main-title p {
+        font-size: 2em;
+    }
+
+    .testimonial p,
+    .testimonial blockquote {
+        font-size: 2em;
     }
 }

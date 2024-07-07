@@ -1,0 +1,1 @@
+this app is a music app tha lets you stream any music of your liking and more over it is a responsive design.
